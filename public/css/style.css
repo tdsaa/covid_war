@@ -332,7 +332,7 @@ body {
   
   .about .content ul i {
     font-size: 20px;
-    padding-right: 2px;
+    padding-right: 5px;
     color: #df594b;
   }
   
@@ -1103,4 +1103,20 @@ body {
     color:#df594b;
     background: #fff;
     border-color: #df594b;
+  }
+  .socials {
+    padding: 1.5rem 0;
+    
+  }
+  
+  .socials ul li {
+    display: inline-block;
+    padding-right: 15px;
+  }
+
+  .socials ul li i{
+    font-size: 10px;
+  }
+  .nav-menu a {
+    text-decoration: none;
   }

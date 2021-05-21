@@ -8,6 +8,12 @@ import Home from './Pages/Home';
 import Covid from './Pages/Covid';
 import Vaccine from './Pages/Vaccine';
 import VaccineCenters from  './Pages/VaccineCenters';
+import PostCovid from './Pages/PostCovid';
+import MentalHealth from './Pages/MentalHealth';
+import Twitter from './Pages/Twitter';
+import Contact from './Pages/Contact';
+import Volunteers from './Pages/Volunteers';
+import Faq from './Pages/Faq';
 
 class MainPage extends React.Component {
 
@@ -23,6 +29,12 @@ class MainPage extends React.Component {
                     <Route path="/covid"  component={Covid} />
                     <Route path="/vaccine"  component={Vaccine} />
                     <Route path="/vaccine-centers" component={VaccineCenters} />
+                    <Route path="/post-covid-conditions" component={PostCovid} />
+                    <Route path="/mental-health" component={MentalHealth} />
+                    <Route path="/faq" component={Faq} />
+                    <Route path="/volunteers" component={Volunteers} />
+                    <Route path="/twitter" component={Twitter} />
+                    <Route path="/contact-us" component={Contact} />
             </Switch>
             </Router>
             <Footer></Footer>
