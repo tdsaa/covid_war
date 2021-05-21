@@ -1,25 +1,25 @@
 import React from 'react'
 
-import vaccine from '../../Content/vaccine';
+import covid from '../../Content/covid';
 
-class Vaccine extends React.Component {
+class Covid extends React.Component {
     render() {
         return(
             <main id="main">
             <section class="about" id="myth">
                 <div className="container">
                     <div className="section-title">
-                        <h2>{vaccine.covid.heading}</h2>
-                        <p>{vaccine.covid.content}</p>
+                        <h2>{covid.covid.heading}</h2>
+                        <p>{covid.covid.content}</p>
                     </div>
                     <div className="section-title content">
-                        <h2 >{vaccine.myths.heading}</h2>
-                        <p>{vaccine.myths.subheading}</p>
+                        <h2 >{covid.myths.heading}</h2>
+                        <p>{covid.myths.subheading}</p>
                         <div className="row">
                             <div className="col-md-12">
                             <ul>
                                 {
-                                    vaccine.myths.contents.map(content=>(
+                                    covid.myths.contents.map(content=>(
                                         <li id={content.id}><i class="ion-checkmark-circled"></i>{content.value}</li>
 
                                     ))
@@ -36,4 +36,4 @@ class Vaccine extends React.Component {
    
 }
 
-export default Vaccine;
+export default Covid;

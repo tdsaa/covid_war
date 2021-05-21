@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Import the content
-import home from './../../content/home';
+import home from './../../Content/home';
 
 
 class Home extends React.Component {

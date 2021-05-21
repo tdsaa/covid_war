@@ -4,7 +4,10 @@ import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Header from './Header'
 import Footer from './Footer'
 // include pages
-import Home from './pages/Home';
+import Home from './Pages/Home';
+import Covid from './Pages/Covid';
+import Vaccine from './Pages/Vaccine';
+import VaccineCenters from  './Pages/VaccineCenters';
 
 class MainPage extends React.Component {
 
@@ -16,9 +19,10 @@ class MainPage extends React.Component {
             <Header></Header>
             <Router>
             <Switch>
-                <Suspense fallback="loading">
                     <Route path="/" exact component={Home} />
-                </Suspense>
+                    <Route path="/covid"  component={Covid} />
+                    <Route path="/vaccine"  component={Vaccine} />
+                    <Route path="/vaccine-centers" component={VaccineCenters} />
             </Switch>
             </Router>
             <Footer></Footer>
