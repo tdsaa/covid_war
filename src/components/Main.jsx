@@ -22,8 +22,8 @@ class MainPage extends React.Component {
         return (
             <body data-aos-easing="ease-in-out-back" data-aos-duration="1000" data-aos-delay="0">
             <button type="button" className="mobile-nav-toggle d-xl-none"><i className="icofont-navigation-menu"></i></button>
+            <Router basename="/covid_war">
             <Header></Header>
-            <Router>
             <Switch>
                     <Route path="/" exact component={Home} />
                     <Route path="/covid"  component={Covid} />

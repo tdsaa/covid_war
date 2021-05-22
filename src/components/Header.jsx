@@ -6,7 +6,6 @@ class Header extends React.Component {
     render(){
         return (
                 <header id="header">
-                <Router>
                     <div className="d-flex flex-column">
                     <nav className="nav-menu">
                         <ul>
@@ -26,7 +25,6 @@ class Header extends React.Component {
                         </ul>
                     </nav>
                     </div>
-                </Router>
         </header>
     );
     }
