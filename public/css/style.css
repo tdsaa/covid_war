@@ -1120,3 +1120,7 @@ body {
   .nav-menu a {
     text-decoration: none;
   }
+  /* hide the sidebar */
+  ::-webkit-scrollbar {
+    display:none;
+  }
