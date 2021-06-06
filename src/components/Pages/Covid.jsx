@@ -16,16 +16,16 @@ class Covid extends React.Component {
                         <h2 >{covid.myths.heading}</h2>
                         <p>{covid.myths.subheading}</p>
                         <div className="row">
-                            <div className="col-md-12">
-                            <ul>
-                                {
-                                    covid.myths.contents.map(content=>(
-                                        <li id={content.id}><i class="ion-checkmark-circled"></i>{content.value}</li>
-
-                                    ))
-                                }
-                            </ul>
+                            { covid.myths.symptoms.map(symptom=>(
+                                <div className="mt-4 col-md-4">
+                                <h3>{symptom.name}</h3>
+                                    <ul>
+                                        {symptom.values.map(value=>(
+                                            <li ><i class="ion-checkmark-circled"></i>{value}</li>
+                                        ))}
+                                    </ul>
                             </div>
+                            ))}
                         </div>
                     </div>
                     </div>

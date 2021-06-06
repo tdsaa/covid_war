@@ -6,14 +6,13 @@ class Header extends React.Component {
     render(){
         return (
                 <header id="header">
-                <Router>
                     <div className="d-flex flex-column">
                     <nav className="nav-menu">
                         <ul>
                         <li className="active"><Link to='/'><i className="ion-home"></i> <span>Home</span></Link></li>
                         <li><Link to="/covid"><i className="ion-information-circled"></i> Covid 19</Link></li>
                         <li><Link to="/vaccine"><i className="ion-checkmark-circled"></i>Vaccines</Link></li>
-                        <li><Link to="/vaccine-centers"><i className="ion-map"></i>Vaccince Centres</Link></li>
+                        <li><Link to="/documents"><i className="ion-map"></i>Documents</Link></li>
                         <li><Link to="/post-covid-conditions"><i className="ion-heart-broken"></i>Post COVID Conditions</Link></li>
                         <li><Link to="/mental-health"><i className="ion-happy"></i>Mental Health</Link></li>
                         <li><Link to="/faq"><i className="ion-chatboxes"></i>FAQs</Link></li>
@@ -26,7 +25,6 @@ class Header extends React.Component {
                         </ul>
                     </nav>
                     </div>
-                </Router>
         </header>
     );
     }

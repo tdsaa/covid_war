@@ -1,10 +1,32 @@
 import React from 'react';
 
 import Table from '../Table';
+import Modal from '../Modal';
 
 import vaccine_centers from '../../Content/vaccine_centers';
 
 class VaccineCenters extends React.Component {
+    constructor(){
+        super();
+        // this.state = {
+        //     modal : true
+        // };
+    }
+    modalClose=()=>{
+        this.setState({modal:false});
+    }
+    handleButtonClick = (e, row) => {
+        console.log(this.state.modal)
+        this.setState({ modal: true });
+        console.log(this.state.modal)
+        return (
+        <Modal show={this.state.modal} handleClose={e => this.modalClose(e)}>
+            <h2>row.id</h2>
+           
+        </Modal>
+        )
+    };
+
     render() {
         const columns =[
             {   Header : 'Vaccine Centers',
@@ -36,12 +58,17 @@ class VaccineCenters extends React.Component {
                     },
                     {
                         Header:'Details',
-                        accessor: ''
+                        Cell:({row})=>(
+                            <button onClick={e=> this.handleButtonClick(e, row)}>
+                                Click here
+                            </button>
+                        )
                     },
 
                 ]
             }
         ] ;
+        
 
         return(
             <main id="main">

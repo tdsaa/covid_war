@@ -14,6 +14,7 @@ import Twitter from './Pages/Twitter';
 import Contact from './Pages/Contact';
 import Volunteers from './Pages/Volunteers';
 import Faq from './Pages/Faq';
+import DescriptionDocs from './Pages/DescriptionDocs';
 
 class MainPage extends React.Component {
 
@@ -22,13 +23,13 @@ class MainPage extends React.Component {
         return (
             <body data-aos-easing="ease-in-out-back" data-aos-duration="1000" data-aos-delay="0">
             <button type="button" className="mobile-nav-toggle d-xl-none"><i className="icofont-navigation-menu"></i></button>
+            <Router basename="/covid_war">
             <Header></Header>
-            <Router>
             <Switch>
                     <Route path="/" exact component={Home} />
                     <Route path="/covid"  component={Covid} />
                     <Route path="/vaccine"  component={Vaccine} />
-                    <Route path="/vaccine-centers" component={VaccineCenters} />
+                    <Route path="/documents" component={DescriptionDocs} />
                     <Route path="/post-covid-conditions" component={PostCovid} />
                     <Route path="/mental-health" component={MentalHealth} />
                     <Route path="/faq" component={Faq} />

@@ -20,7 +20,7 @@ class MentalHealth extends React.Component {
                             <ul>
                                 {
                                     mental_health.points.contents.map(content=>(
-                                        <li id={content.id}><i class="ion-checkmark-circled"></i>{content.value}</li>
+                                        <li id={content.id}><i class="ion-checkmark-circled"></i><b>{content.value}</b>{content.detail}</li>
 
                                     ))
                                 }
